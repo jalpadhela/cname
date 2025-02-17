@@ -136,3 +136,21 @@ $(document).ready(function () {
         $('#product-details').removeClass('d-none');
     });
 });
+
+$(document).ready(function(){
+    $("#whatsappForm").submit(function(e){
+        e.preventDefault();
+
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+        var phone = "9913230000"; // Replace with your WhatsApp number (without +)
+
+        var url = "https://wa.me/" + phone + "?text=" + 
+                  "Hello, my name is " + encodeURIComponent(name) + 
+                  ". My email is " + encodeURIComponent(email) + 
+                  ". " + encodeURIComponent(message);
+
+        window.open(url, "_blank"); // Open WhatsApp
+    });
+});
