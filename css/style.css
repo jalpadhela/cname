@@ -363,6 +363,60 @@
 }
 
 
+
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+}
+
+.marquee .track .content img {
+    margin: 0;
+    width: 30vb;
+    margin: 20px;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-120%);
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-530%);
+        }
+    }
+}
+
+
+
 /*** Facts ***/
 /* .fact {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
