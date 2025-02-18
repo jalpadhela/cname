@@ -338,6 +338,25 @@
     padding: 15px;
 }
 
+.product-item {
+    transition: .1s;
+}
+
+.product-item:hover {
+    border-width: 0 !important;
+    box-shadow: 0 0 35px rgba(121, 131, 188, .25);
+}
+
+.product-item:hover a.btn {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+.product-item img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensures images fill the set dimensions without distortion */
+}
+
 /* Gallery Section */
 .gallery-section {
     padding-top: 100px;
