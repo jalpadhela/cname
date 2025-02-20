@@ -311,6 +311,9 @@
     border-right: none;
 }
 
+.footer .btn.btn-link:hover {
+    color: var(--bs-primary);
+}
 
 /* Product Section */
 .product-section {
@@ -351,10 +354,14 @@
     color: var(--bs-white);
     background: var(--bs-primary);
 }
+
 .product-item img {
-    width: 100%; /* Ensures the image takes the full width of its container */
-    height: 200px; /* Set a fixed height for consistency */
-    object-fit: cover; /* Ensures images fill the set dimensions without distortion */
+    width: 100%;
+    /* Ensures the image takes the full width of its container */
+    height: 200px;
+    /* Set a fixed height for consistency */
+    object-fit: cover;
+    /* Ensures images fill the set dimensions without distortion */
 }
 
 /* Gallery Section */
